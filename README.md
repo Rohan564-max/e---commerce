@@ -25,49 +25,4 @@ Charts: ApexCharts + react-apexcharts
 Other: Swiper, React Toastify, React Data Table Component, styled-components, React CountUp
 Fonts use next/font (Geist).
 
-Prerequisites
-Node.js 20+ (recommended; aligns with @types/node in this repo)
-npm (or use your preferred package manager and adjust commands)
-Getting started
-Clone the repository and install dependencies:
 
-git clone <your-repo-url> ecommerce-nextjs
-cd ecommerce-nextjs
-npm install
-Run the development server:
-
-npm run dev
-Open http://localhost:3000 in your browser. The app hot-reloads when you edit source files.
-
-Scripts
-Command	Description
-npm run dev	Start the Next.js dev server (Turbopack).
-npm run build	Create an optimized production build.
-npm run start	Run the production server (after build).
-npm run lint	Run ESLint (next lint).
-Project layout (overview)
-ecommerce-nextjs/
-├── public/                 # Static assets for the main site (images, CSS, etc.)
-├── public-dashboard/       # Dashboard-oriented static assets (SCSS/CSS, etc.)
-├── src/
-│   └── app/                # App Router: routes, layouts, pages
-│       ├── (demos)/        # Alternate home / index demos
-│       ├── (inner)/        # Inner pages (shop, blog, account, …)
-│       └── dashboard/      # Dashboard routes
-│   └── components/         # Shared React components (headers, footers, …)
-├── next.config.ts
-├── package.json
-└── tsconfig.json
-Explore src/app for route structure; dynamic shop content includes routes such as /shop/[slug].
-
-Learning goals you might pursue
-Routing and layouts with the App Router
-Shared state patterns (e.g. cart / wishlist / compare contexts in src/components/header)
-Composition of large page templates and reusable sections
-Styling with Bootstrap alongside other UI libraries
-Preparing a real project: API routes, database, auth, and deployment are not the focus of this demo repo
-Contributing
-If you fork this for learning, keep the non-commercial / educational intent in mind when redistributing or publishing derivatives, and respect licenses of any upstream themes or assets.
-
-Acknowledgments
-Built with Next.js and the broader open-source ecosystem. Refer to individual package licenses in package.json and in third-party asset folders as needed.
